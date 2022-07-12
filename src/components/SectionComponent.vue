@@ -71,8 +71,6 @@ import { defineComponent } from 'vue';
 import apiClient from '@/services/apiclient';
 import MainComponent from './MainComponent.vue';
 import ResponseData from '@/models/ResponseData';
-import axios from 'axios';
-
 
 export default defineComponent({
     name: "SectionComponent",
