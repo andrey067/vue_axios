@@ -1,18 +1,20 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div class="flex flex-col h-screen bg-gray-900 text-gray-300">
+    <HeaderComponent />
+    <SectionComponent />    
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import HeaderComponent from '@/components/HeaderComponent.vue';
+import SectionComponent from '@/components/SectionComponent.vue';
 
 export default defineComponent({
   name: 'HomeView',
   components: {
-    HelloWorld,
+    HeaderComponent,
+    SectionComponent,    
   },
 });
 </script>
